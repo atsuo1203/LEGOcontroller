@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18E6C117AB90A8763776ADB8 /* Pods_lego.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC85EF743D5F4D19E19D7246 /* Pods_lego.framework */; };
 		C0720D541E0CBC1000A91231 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0720D531E0CBC1000A91231 /* AppDelegate.swift */; };
 		C0720D561E0CBC1000A91231 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0720D551E0CBC1000A91231 /* ViewController.swift */; };
 		C0720D591E0CBC1000A91231 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0720D571E0CBC1000A91231 /* Main.storyboard */; };
@@ -47,6 +48,9 @@
 		C0720D6F1E0CBC1000A91231 /* legoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = legoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0720D731E0CBC1000A91231 /* legoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = legoUITests.swift; sourceTree = "<group>"; };
 		C0720D751E0CBC1000A91231 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E72DD96EED0AC87F8041FF72 /* Pods-lego.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lego.release.xcconfig"; path = "Pods/Target Support Files/Pods-lego/Pods-lego.release.xcconfig"; sourceTree = "<group>"; };
+		F6A21D8B02BC446FBA652FD4 /* Pods-lego.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lego.debug.xcconfig"; path = "Pods/Target Support Files/Pods-lego/Pods-lego.debug.xcconfig"; sourceTree = "<group>"; };
+		FC85EF743D5F4D19E19D7246 /* Pods_lego.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_lego.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18E6C117AB90A8763776ADB8 /* Pods_lego.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8A95FA1CFDDFAC8D744C0D6C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F6A21D8B02BC446FBA652FD4 /* Pods-lego.debug.xcconfig */,
+				E72DD96EED0AC87F8041FF72 /* Pods-lego.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C0720D471E0CBC1000A91231 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +95,8 @@
 				C0720D671E0CBC1000A91231 /* legoTests */,
 				C0720D721E0CBC1000A91231 /* legoUITests */,
 				C0720D511E0CBC1000A91231 /* Products */,
+				8A95FA1CFDDFAC8D744C0D6C /* Pods */,
+				F216EF5636E55ED083732459 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +141,14 @@
 			path = legoUITests;
 			sourceTree = "<group>";
 		};
+		F216EF5636E55ED083732459 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC85EF743D5F4D19E19D7246 /* Pods_lego.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C0720D781E0CBC1000A91231 /* Build configuration list for PBXNativeTarget "lego" */;
 			buildPhases = (
+				369491D05C4560DFF2ACEF7B /* [CP] Check Pods Manifest.lock */,
 				C0720D4C1E0CBC1000A91231 /* Sources */,
 				C0720D4D1E0CBC1000A91231 /* Frameworks */,
 				C0720D4E1E0CBC1000A91231 /* Resources */,
+				133C201847AB99F2841C70F3 /* [CP] Embed Pods Frameworks */,
+				5BE92C7D3B8E27612EFA7AE1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -256,6 +283,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		133C201847AB99F2841C70F3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-lego/Pods-lego-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		369491D05C4560DFF2ACEF7B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5BE92C7D3B8E27612EFA7AE1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-lego/Pods-lego-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C0720D4C1E0CBC1000A91231 /* Sources */ = {
@@ -413,6 +488,7 @@
 		};
 		C0720D791E0CBC1000A91231 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6A21D8B02BC446FBA652FD4 /* Pods-lego.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Z793E54W8T;
@@ -426,6 +502,7 @@
 		};
 		C0720D7A1E0CBC1000A91231 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E72DD96EED0AC87F8041FF72 /* Pods-lego.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Z793E54W8T;
