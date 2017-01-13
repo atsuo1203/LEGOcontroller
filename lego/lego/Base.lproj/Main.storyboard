@@ -27,7 +27,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="up"/>
                                 <connections>
-                                    <action selector="upButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cnp-hz-lx6"/>
+                                    <action selector="upButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f4o-QR-Kjh"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e6Q-FN-fk4">
@@ -36,7 +36,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="down"/>
                                 <connections>
-                                    <action selector="downButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d3H-KH-k1K"/>
+                                    <action selector="downButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cAI-8f-dlb"/>
                                 </connections>
                             </button>
                         </subviews>
